@@ -6,6 +6,34 @@
 }
 
 body {
-    background-color: #080808;
+    background-color: #35281E;
     color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.name-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.first-letter-tag {
+    color: rgb(247, 66, 66);
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
