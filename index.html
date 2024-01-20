@@ -33,19 +33,86 @@
         <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="about-col-1"></div>
+                    <div class="about-col-1">
+                        <img src="images/user.JPG">
+                    </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste 
                             vel fuga reprehenderit ex necessitatibus, voluptates quo quam 
                             repudiandae consequatur expedita autem eos sed id dolorem dicta 
                             pariatur! Voluptatum, cupiditate maiores?</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                                <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                                <p class="tab-links" onclick="openTab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Design</span><br>Frontend development</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2024 - Present</span><br>Intern at Adaptive computer solutions</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2022</span><br>Bsc Metallurgical engineering at KNUST</li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
+        <!--------------services------------>
+        
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat 
+                            perspiciatis libero ut adipisci, numquam atque asperiores magnam? Quos sunt eligendi reprehenderit, 
+                            nihil debitis mollitia odio minus vel! Fugiat, sapiente assumenda?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Web design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat 
+                            perspiciatis libero ut adipisci, numquam atque asperiores magnam? Quos sunt eligendi reprehenderit, 
+                            nihil debitis mollitia odio minus vel! Fugiat, sapiente assumenda?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Web design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat 
+                            perspiciatis libero ut adipisci, numquam atque asperiores magnam? Quos sunt eligendi reprehenderit, 
+                            nihil debitis mollitia odio minus vel! Fugiat, sapiente assumenda?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
 
+        <script>
+            var tabLinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tab-contents");
+
+            function openTab(tabname) {
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove("active-link");
+                }
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
         </script>
     </body>
 </html>
