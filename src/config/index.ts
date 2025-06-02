@@ -9,6 +9,7 @@ export const SITE_CONFIG: SiteConfig = {
   siteLogo: "/alejandro-small.jpg",
   navLinks: [
     { text: "Experience", href: "#experience" },
+    {text: "Skills", href: "#skills" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
     { text: "Resume", href: "/resume.pdf", isExternal: true },
@@ -17,8 +18,6 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Twitter", href: "https://x.com/lofoneh"},
     { text: "LinkedIn", href: "https://www.linkedin.com/in/jeffery-asamani/" },
     { text: "Github", href: "https://github.com/lofoneh"},
-    /*{ text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },*/
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -61,6 +60,32 @@ export const SITE_CONTENT: SiteContent = {
       endDate: "Mar 2024",
       summary:
         "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+    },
+  ],
+  skills: [
+    {
+      name: "Android Development",
+      icon: "/android.svg",
+      description:
+        "Proficient in building Android applications using Kotlin and Java, with a focus on performance and user experience.",
+    },
+    {
+      name: "iOS Development",
+      icon: "/apple.svg",
+      description:
+        "Experienced in developing iOS applications using Swift, ensuring high performance and seamless integration with Apple services.",
+    },
+    {
+      name: "Web Development",
+      icon: "/web.svg",
+      description:
+        "Skilled in front-end technologies like React, Vue.js, and back-end frameworks such as Node.js and Django.",
+    },
+    {
+      name: "DevOps Practices",
+      icon: "/devops.svg",
+      description:
+        "Knowledgeable in CI/CD pipelines, containerization with Docker, and cloud services like AWS and Azure.",
     },
   ],
   projects: [

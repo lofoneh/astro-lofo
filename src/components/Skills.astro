@@ -1,0 +1,26 @@
+---
+import Section from "./Section.astro";
+import type { SkillsProps } from "@types";
+
+interface Props {
+  skills: SkillsProps[];
+}
+
+const { skills } = Astro.props;
+---
+
+
+<Section text="Skills" href="skills">
+  {
+    skills.map(({ name, icon, description }: SkillsProps) => (
+      <div class="mb-10">
+        <h3 class="mb-1.5 font-serif text-2xl font-semibold text-white">
+          {name}
+        </h3>
+        <div class="flex items-center gap-4 pb-5">
+          <img src={icon} alt={`${name} icon`} class="w-8 h-8" />
+          <p class="text-base text-neutral">{description}</p>
+        </div>
+      </div>
+    ))}
+</Section>
