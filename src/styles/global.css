@@ -51,3 +51,53 @@
     }
   }
 }
+
+/* Light theme overrides */
+html:not(.dark) {
+  --color-primary: #1d4ed8;
+  --color-neutral: #64748b;
+  --color-white: #1e293b;
+  --color-black: #f8fafc;
+}
+
+/* Light theme specific class overrides */
+html:not(.dark) body {
+  background-color: #f8fafc !important;
+}
+
+html:not(.dark) .bg-black {
+  background-color: #f8fafc !important;
+}
+
+html:not(.dark) .text-white {
+  color: #1e293b !important;
+}
+
+html:not(.dark) .text-neutral {
+  color: #64748b !important;
+}
+
+html:not(.dark) .text-primary {
+  color: #1d4ed8 !important;
+}
+
+html:not(.dark) .border-neutral\/20 {
+  border-color: rgba(100, 116, 139, 0.2) !important;
+}
+
+html:not(.dark) .border-neutral\/40 {
+  border-color: rgba(100, 116, 139, 0.4) !important;
+}
+
+html:not(.dark) .text-white\/70 {
+  color: rgba(30, 41, 59, 0.7) !important;
+}
+
+html:not(.dark) .bg-\[#1c232d\]\/85 {
+  background-color: rgba(241, 245, 249, 0.85) !important;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

@@ -29,7 +29,7 @@ export const SITE_CONTENT: SiteContent = {
     specialty: "Software Engineer",
     summary:
       "Software engineer based in Kumasi, Ghana. I specialize in web application development, designing and building backend systems and DevOps practices.",
-    email: "jefferyasamani@gmail.com",
+    email: "jefferyasamani7@gmail.com",
   },
   experience: [
     {

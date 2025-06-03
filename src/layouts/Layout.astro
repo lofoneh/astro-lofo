@@ -41,6 +41,36 @@ const ogImgUrl = canonicalURL + socialImage;
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImgUrl} />
+
+    <!-- Prevent flash of unstyled content (FOUC) -->
+    <script is:inline>
+      // Theme initialization - must run before page renders
+      (function() {
+        function getStoredTheme() {
+          if (typeof localStorage !== 'undefined') {
+            return localStorage.getItem('theme');
+          }
+          return null;
+        }
+        
+        function getPreferredTheme() {
+          const storedTheme = getStoredTheme();
+          if (storedTheme) {
+            return storedTheme;
+          }
+          
+          // Default to dark theme (matching your original design)
+          return 'dark';
+        }
+        
+        const theme = getPreferredTheme();
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
   </head>
   <body class="bg-black font-sans">
     <Header siteLogo={siteLogo} navLinks={navLinks} />
