@@ -1,11 +1,8 @@
-# AstroZen - Personal Portfolio Website
+# AstroLofo - My Personal Portfolio Website
 
-AstroZen is a minimalist, accessible and responsive portfolio template for your personal portfolio website. It is built with Astro and TailwindCSS.
+AstroLofo is my simple, accessible and responsive personal portfolio website. It is built with Astro and TailwindCSS.
 
-![zen-og](https://github.com/user-attachments/assets/7a72aaae-6652-4cd0-becc-8e6a3c224993)
-
-> [!NOTE]
-> The information contained in this template, including names, images, and content, is entirely fictitious and is intended solely to give the design a realistic appearance. Any coincidence with real-life people, events, or situations is purely coincidental. It is recommended that you replace this information with your own information.
+**This is inspired and adapted from https://github.com/immois/astro-zen.git**
 
 ## 🔥 Features
 
@@ -14,17 +11,13 @@ AstroZen is a minimalist, accessible and responsive portfolio template for your 
 - [x] SEO-friendly and accessible
 - [x] Easy to customize with a single configuration file
 
-## ✅ Lighthouse Score
-
-![performance](https://github.com/user-attachments/assets/4f95e2ca-03f9-4996-9e34-dcd179194c58)
-
 ## 🚀 Getting Started
 
 Clone this repository to your local machine using Git.
 
 ```scheme
-git clone https://github.com/immois/astro-zen.git
-cd astro-zen
+git clone https://github.com/lofoneh/astro-lofo.git
+cd astro-lofo
 ```
 
 | Command        | Action                                       |
