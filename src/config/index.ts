@@ -63,7 +63,7 @@ export const SITE_CONTENT: SiteContent = {
     },
   ],
   skills: [
-    {
+    /*{
       name: "Android Development",
       icon: "/android.svg",
       description:
@@ -74,7 +74,7 @@ export const SITE_CONTENT: SiteContent = {
       icon: "/apple.svg",
       description:
         "Experienced in developing iOS applications using Swift, ensuring high performance and seamless integration with Apple services.",
-    },
+    },*/
     {
       name: "Web Development",
       icon: "/web.svg",
