@@ -63,7 +63,7 @@ export const SITE_CONTENT: SiteContent = {
     },
   ],
   skills: [
-    {
+    /*{
       name: "Android Development",
       icon: "/android.svg",
       description:
@@ -74,12 +74,12 @@ export const SITE_CONTENT: SiteContent = {
       icon: "/apple.svg",
       description:
         "Experienced in developing iOS applications using Swift, ensuring high performance and seamless integration with Apple services.",
-    },
+    },*/
     {
       name: "Web Development",
-      icon: "/web.svg",
+      icon: "/web-development.svg",
       description:
-        "Skilled in front-end technologies like React, Vue.js, and back-end frameworks such as Node.js and Django.",
+        "Skilled in front-end technologies like React, Next.js, and back-end frameworks such as Node.js and Django.",
     },
     {
       name: "DevOps Practices",

@@ -93,8 +93,58 @@ html:not(.dark) .text-white\/70 {
   color: rgba(30, 41, 59, 0.7) !important;
 }
 
+/* Projects section background - Dark theme */
+html.dark .bg-\[#1c232d\]\/85 {
+  background-color: rgba(28, 35, 45, 0.85) !important;
+}
+
+/* Projects section background - Light theme */
 html:not(.dark) .bg-\[#1c232d\]\/85 {
   background-color: rgba(241, 245, 249, 0.85) !important;
+}
+
+/* Additional project card styling for light theme */
+html:not(.dark) .bg-difu {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+}
+
+/* Header background for light theme */
+html:not(.dark) header {
+  background-color: #f8fafc !important;
+}
+
+/* Navigation menu background for light theme */
+html:not(.dark) nav {
+  background-color: #f8fafc !important;
+}
+
+/* External SVG theming */
+/* Target elements that use external.svg in their after pseudo-element */
+[class*="after:content-[url(/external.svg)]"]::after {
+  transition: filter 0.3s ease;
+}
+
+/* Dark theme - keep SVG as is (assuming it's light colored) */
+html.dark [class*="after:content-[url(/external.svg)]"]::after {
+  filter: none;
+}
+
+/* Light theme - make SVG darker */
+html:not(.dark) [class*="after:content-[url(/external.svg)]"]::after {
+  filter: invert(1) brightness(0.3) contrast(2);
+}
+
+/* Alternative approach - if you want to target specific classes */
+.after\:content-\[url\(\/external\.svg\)\]::after {
+  transition: filter 0.3s ease;
+}
+
+html:not(.dark) .after\:content-\[url\(\/external\.svg\)\]::after {
+  filter: invert(1) brightness(0.3) contrast(2);
+}
+
+html.dark .after\:content-\[url\(\/external\.svg\)\]::after {
+  filter: none;
 }
 
 /* Smooth transitions for theme changes */
