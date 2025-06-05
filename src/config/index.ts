@@ -77,9 +77,9 @@ export const SITE_CONTENT: SiteContent = {
     },*/
     {
       name: "Web Development",
-      icon: "/web.svg",
+      icon: "/web-development.svg",
       description:
-        "Skilled in front-end technologies like React, Vue.js, and back-end frameworks such as Node.js and Django.",
+        "Skilled in front-end technologies like React, Next.js, and back-end frameworks such as Node.js and Django.",
     },
     {
       name: "DevOps Practices",

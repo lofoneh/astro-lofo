@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/image": "^0.18.0",
+    "@astrojs/vercel": "^8.1.5",
     "@fontsource-variable/gabarito": "^5.1.0",
     "@fontsource/be-vietnam-pro": "^5.1.0",
     "@tailwindcss/vite": "^4.1.1",
@@ -24,5 +25,8 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11"
   },
-  "packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.14.4",
+  "trustedDependencies": [
+    "@tailwindcss/oxide"
+  ]
 }
