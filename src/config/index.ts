@@ -4,7 +4,7 @@ export const SITE_CONFIG: SiteConfig = {
   title: "Jeffery Lofoneh Asamani — Software Engineer",
   author: "Jeffery Lofoneh Asamani",
   description:
-    "Software Engineer based in Kumasi, Ghana. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer based in Kumasi, Ghana. I specialize in web application development, designing and building backend systems and DevOps practices.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
   navLinks: [
@@ -68,13 +68,13 @@ export const SITE_CONTENT: SiteContent = {
       icon: "/android.svg",
       description:
         "Proficient in building Android applications using Kotlin and Java, with a focus on performance and user experience.",
-    },
-    {
-      name: "iOS Development",
-      icon: "/apple.svg",
-      description:
-        "Experienced in developing iOS applications using Swift, ensuring high performance and seamless integration with Apple services.",
     },*/
+    {
+      name: "Fintech Solutions",
+      icon: "/fintech.svg",
+      description:
+        "Experienced in developing financial applications, including payment gateways and transaction processing systems.",
+    },
     {
       name: "Web Development",
       icon: "/web-development.svg",
@@ -113,10 +113,11 @@ export const SITE_CONTENT: SiteContent = {
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I'm Jeffery Asamani, an ALX-trained Full Stack Developer transitioning into Cloud Engineering with a passion for building resilient fintech solutions. I specialize in creating scalable web applications using React, Next.js, and Bun, while leveraging backend technologies like Python, Node.js, and Go to develop robust payment systems and distributed architectures.
+      My expertise spans cloud-native development with AWS, Terraform, Docker, and Kubernetes, complemented by DevOps practices that automate infrastructure across multiple servers. I'm currently expanding into blockchain fundamentals and Web3 technologies, working with Solidity and Ethereum alongside traditional fintech tools like Stripe.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
-    `,
+    I'm driven by the intersection of finance and technology, focusing on projects that democratize financial services. Currently developing an intelligent finance app for expense tracking and investment portfolio management, I aim to architect systems that combine cloud scalability with blockchain's trustless nature to build the next generation of inclusive fintech solutions.
+        `,
     image: "/alejandro-big.jpg",
   },
 };
